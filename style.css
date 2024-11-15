@@ -1,0 +1,167 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+#member-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.member-hidden {
+  display: none;
+}
+
+fieldset {
+  border: 2px solid #13679f;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+legend {
+  background-color: #13679f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #13679f;
+}
+
+.next-btn {
+  background-color: #13679f;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.next-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Payment Information Section */
+.hidden {
+  position: absolute;
+  top: 0;
+  right: -100%; /* Hidden initially */
+  width: 50%;
+  padding: 20px;
+  transition: right 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Hide initially */
+}
+
+#payment-info fieldset {
+  border: 2px solid #13679f;
+  /* max-width: 600px; */
+  margin: 0 auto;
+}
+
+.submit-btn {
+  background-color: #13679f;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
+
+.selected-payment-btn {
+  background-color: #13679f;
+}
+
+.btn-pay:hover {
+  background-color: #13679f;
+}
+
+/* Message box styles */
+.message-box {
+  margin: 15px auto;
+  max-width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.success {
+  background-color: #e0f8e0;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+.error {
+  background-color: #f8e0e0;
+  color: #f44336;
+  border: 1px solid #f44336;
+}
+
+.message-text {
+  flex-grow: 1;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: inherit;
+}
+
+/* Disable submit button when submitting */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
