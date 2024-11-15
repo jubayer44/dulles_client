@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Proceed with Stripe payment (already handled in your current code)
       const response = await fetch(
-        "http://localhost:5000/payment/stripe-payment-intent",
+        "https://dua-server-beta.vercel.app/payment/stripe-payment-intent",
         {
           method: "POST",
           headers: {
@@ -360,17 +360,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
       // Send the form data to the server
-      const response = await fetch("http://localhost:5000/contact-us", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          message: message,
-        }),
-      });
+      const response = await fetch(
+        "https://dua-server-beta.vercel.app/contact-us",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message,
+          }),
+        }
+      );
 
       // Handle the response and display success message
       if (response.ok) {
